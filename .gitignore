@@ -2,6 +2,10 @@
 Thumbs.db
 ehthumbs.db
 
+.cache
+.idea
+ENV
+
 # Folder config file
 Desktop.ini
 
