@@ -10,11 +10,10 @@ import unittest, time, re
 
 class Untitled(unittest.TestCase):
     def setUp(self):
-        # self.driver = webdriver.Remote('http://10.0.2.15:4444/wd/hub', webdriver.DesiredCapabilities.FIREFOX)
-        self.driver = webdriver.Remote('http://127.0.0.1:4444/wd/hub', webdriver.DesiredCapabilities.FIREFOX)
+        # self.driver = webdriver.Remote('http://192.168.56.101:4444/wd/hub', webdriver.DesiredCapabilities.FIREFOX)
+        self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://localhost:9080"
-        # self.base_url = "http://10.0.2.15"
+        self.base_url = "http://192.168.56.1:9080"
         self.verificationErrors = []
         self.accept_next_alert = True
 
